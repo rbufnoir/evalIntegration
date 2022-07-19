@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Location</title>
+        <link rel="shortcut icon" href="src/img/vehicule1.png">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="dropdown">
+                    <i class="fa fa-solid fa-bars"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Louer une voiture</a>
+                        <a href="#">Louer un utilitaire</a>
+                        <a href="#">Réserver un chauffeur</a>
+                        <a href="#">Découvrez nos agences</a>
+                        <a href="#">Mon compte</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <div>
+                    <h1>Bienvenue à bord</h1>
+                    <p>Location de voiture 24/24 et 7j/7</p>
+                </div>
+                <fieldset>
+                    <input type="text" placeholder="Adresse de départ">
+                    <input type="date">
+                    <input type="date">
+                    <button>Valider ma recherche</button>
+                </fieldset>
+            </section>
+        </header>
+        <main>
+            <nav>
+                <h3>7 résultats</h3>
+                <select>
+                    <option>Prix croissant</option>
+                    <option>Prix décroissant</option>
+                    <option>Popularité</option>
+                    <option>Disponibilité</option>
+                </select>
+            </nav>
+            <section>
+                <h3 id="hidden">Liste des véhicules</h3>
+                <article>
+                    <figure>
+                        <div class="carousel">
+                            <img src="src/img/vehicule1.png" alt="Photo de Peugeot 208" class="slider1">
+                            <img src="src/img/vehicule2.png" alt="Photo de Peugeot 208" class="slider1">
+                            <img src="src/img/vehicule3.png" alt="Photo de Peugeot 208" class="slider1">
+                            <a class="prev" onclick="showNElem(-1)">&#10094;</a>
+                            <a class="next" onclick="showNElem(1)">&#10095;</a>
+                        </div>
+                        <h4>Peugeot 208</h4>
+                        <figcaption>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire).</figcaption>
+                    </figure>
+                    <p>999 € - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </article>
+                <hr/>
+                <article>
+                    <figure>
+                        <div class="carousel">
+                            <img src="src/img/vehicule2.png" alt="Photo de Ford Focus">
+                            <a class="prev">&#10094;</a>
+                            <a class="next">&#10095;</a>
+                        </div>
+                        <h4>Ford Focus</h4>
+                        <figcaption>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,5/km supplémentaire).</figcaption>
+                    </figure>
+                    <p>999 €</p>
+                    <button>Réserver et payer</button>
+                </article>
+                <hr/>
+                <article>
+                    <figure>
+                        <div class="carousel">
+                            <img src="src/img/vehicule3.png" alt="Photo de Audi A1">
+                            <a class="prev">&#10094;</a>
+                            <a class="next">&#10095;</a>
+                        </div>
+                        <h4>Audi A1</h4>
+                        <figcaption>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,55/km supplémentaire).</figcaption>
+                    </figure>
+                    <p>1100 € - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </article>
+                <hr/>
+                <article>
+                    <figure>
+                        <div class="carousel">
+                            <img src="src/img/vehicule4.png" alt="Photo de Opel Mokka">
+                            <a class="prev">&#10094;</a>
+                            <a class="next">&#10095;</a>
+                        </div>
+                        <h4>Opel Mokka</h4>
+                        <figcaption>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0,4/km supplémentaire).</figcaption>
+                    </figure>
+                    <p>1150 € - Agence de Paris</p>
+                    <button>Réserver et payer</button>
+                </article>
+                <hr/>
+            </section>
+        </main>
+        <footer>
+            <figure>
+                <img src="src/img/agence.jpg" alt="Photo de l'agence à Paris">
+                <figcaption>Notre Agence de <b>Paris</b><br/>
+                300 boulevard de vaugirard, 75015, Paris<br/>
+                Ouvert 7j/7 de 09h à 13h et de 14h à 20h<br/>
+                contact@vtc.com
+                </figcaption>
+            </figure>
+        </footer>
+        <script src="src/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  min-height: 553px;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 553px;
+}
+header section {
+  height: 553px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header section h1, header section p {
+  color: white;
+  text-align: center;
+}
+header section h1 {
+  font-size: 2.5em;
+}
+header section p {
+  font-size: 1.2em;
+}
+header .dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+header .dropdown i {
+  color: grey;
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  margin: 5px 3px;
+  border-radius: 5px;
+}
+header .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 0.2em 2em;
+  background-color: white;
+  width: 100vw;
+}
+header .dropdown .dropdown-content a {
+  text-decoration: none;
+  line-height: 1.5em;
+  color: grey;
+  display: block;
+}
+header .dropdown .dropdown-content a:hover {
+  background-color: black;
+}
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+header fieldset {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+}
+header fieldset input {
+  height: 2em;
+  margin: 10px;
+  width: 20%;
+}
+header fieldset button {
+  color: white;
+  border: 0;
+  background-color: rgba(2, 163, 2, 0.5);
+  width: 20%;
+}
+header fieldset button:hover {
+  background-color: rgba(2, 163, 2, 0.7);
+}
+header fieldset button:active {
+  transform: translate(1px, 1px);
+}
+
+main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+main nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+main nav select {
+  padding: 0.5em 0;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+main section #hidden {
+  display: none;
+}
+main section article {
+  width: 100%;
+  line-height: 2em;
+  margin: 1em 0;
+}
+main section article .carousel {
+  float: left;
+  margin-left: 5%;
+  margin-right: 10%;
+  position: relative;
+}
+main section article a {
+  position: absolute;
+  top: 40%;
+}
+main section article a.prev {
+  left: 0%;
+}
+main section article a.next {
+  right: -5%;
+}
+main section article a:active {
+  transform: translate(1px, 1px);
+}
+main section article button {
+  padding: 4px 6px;
+  background-color: rgba(2, 163, 2, 0.8);
+  color: white;
+  border: solid 1px green;
+  border-radius: 3px;
+}
+main section article button:hover {
+  background-color: rgb(2, 163, 2);
+}
+main section article button:active {
+  transform: translate(1px, 1px);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em 0;
+}
+footer figure {
+  display: flex;
+}
+footer figure img {
+  height: 100px;
+  width: auto;
+  margin-right: 3em;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+/* Format tablette */
+@media screen and (max-width: 992px) {
+  header fieldset {
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+  }
+  header fieldset input {
+    padding: 1em 0;
+    width: 29%;
+  }
+  header fieldset button {
+    height: 2.5em;
+    width: 100%;
+  }
+  main section article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main section article figure h4, main section article figure figcaption {
+    display: none;
+  }
+  main section article p {
+    display: none;
+  }
+}
+/* Format mobile */
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header section {
+    width: 100%;
+  }
+  header section fieldset {
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-direction: column;
+  }
+  header section fieldset input, header section fieldset button {
+    margin: 5px;
+    width: 98%;
+  }
+  main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  main section article img {
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

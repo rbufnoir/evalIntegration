@@ -137,8 +137,9 @@ main {
                 position: relative;
             }
 
-            a {
+            i {
                 position: absolute;
+                font-size: 2em;
                 top: 40%;
 
                 &.prev {

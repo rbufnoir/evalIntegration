@@ -118,17 +118,18 @@ main section article .carousel {
   margin-right: 10%;
   position: relative;
 }
-main section article a {
+main section article i {
   position: absolute;
+  font-size: 2em;
   top: 40%;
 }
-main section article a.prev {
+main section article i.prev {
   left: 0%;
 }
-main section article a.next {
+main section article i.next {
   right: -5%;
 }
-main section article a:active {
+main section article i:active {
   transform: translate(1px, 1px);
 }
 main section article button {
